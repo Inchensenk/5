@@ -34,7 +34,7 @@
 .item-level1-white-1 {
   background-color: #ffffff;
   padding-top: 1em;
-  /* border: 10px solid rgb(199, 181, 23); */
+  
 }
 
 .item-level1-white-2 {
@@ -47,15 +47,31 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 10% 1% 10%;
-  /* border: 10px solid rgb(158, 23, 199); */
 }
 
 .item-level3 {
   background-color: #f4f9fe;
   margin: 5px;
   flex: 1;
-  /* border: 5px solid rgb(177, 91, 52); */
+  bottom: 0;
+  right: 0;
+  
+  display: flex;
 }
+
+.item-level4{
+  flex-grow: 1;
+ }
+ 
+ .img{
+   align-self:flex-end;
+   flex-grow:0;
+ }
+ 
+ .text{
+  align-self:baseline;
+  flex-grow:1;
+ }
 
 table {
   width: 100%;
@@ -90,8 +106,5 @@ tr {
   text-align: left;
   padding: 0 0 0 20px;
 }
-img {
-  width: 10em;
-  height: auto;
-  border-bottom-right-radius: 5px;
-}
+
+

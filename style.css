@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 .container {
-  display: flex; /*flex-контейнер ведет себя как блочный элемент, занимая всю ширину экрана. inline-flex-контейнер подстроиться под размер контента*/
+  display: flex;
   justify-content: flex-start;
-  flex-direction: column; /*разворот основной оси на 90%, теперь она распологается вертикально*/
+  flex-direction: column;
   flex-wrap: wrap;
-
   align-content: stretch;
-  /* border: 10px solid rgb(37, 173, 32); */
-  min-height: 100vh; /*Высота видимой области экрана*/
+
+  width: 1746px;
+  height: 1728px;
+
+
+  border: gray solid 5px;
 }
 
 .item-level1-turquoise-1 {
@@ -19,12 +22,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center; /*выравнивание по главной оси*/
-  /* align-items: center; выравнивание по поперечной оси */
-  /* align-content: center; */
-  /* border: 10px solid rgb(23, 59, 112); */
+  justify-content: center;
 
   padding: 3% 0 3% 0;
+  
 }
 
 .item-level1-turquoise-2 {
@@ -34,7 +35,6 @@
 .item-level1-white-1 {
   background-color: #ffffff;
   padding-top: 1em;
-  
 }
 
 .item-level1-white-2 {
@@ -55,23 +55,23 @@
   flex: 1;
   bottom: 0;
   right: 0;
-  
+
   display: flex;
 }
 
-.item-level4{
+.item-level4 {
   flex-grow: 1;
- }
- 
- .img{
-   align-self:flex-end;
-   flex-grow:0;
- }
- 
- .text{
-  align-self:baseline;
-  flex-grow:1;
- }
+}
+
+.img {
+  align-self: flex-end;
+  flex-grow: 0;
+}
+
+.text {
+  align-self: baseline;
+  flex-grow: 1;
+}
 
 table {
   width: 100%;
@@ -106,5 +106,3 @@ tr {
   text-align: left;
   padding: 0 0 0 20px;
 }
-
-
